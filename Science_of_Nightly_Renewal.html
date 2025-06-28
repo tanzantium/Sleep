@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Science of Sleep: From Magnified Loss to Nightly Recovery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* Slate 950 */
+            color: #f8fafc; /* Slate 50 */
+        }
+        .icon-wrapper {
+            background-color: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .timeline-bar {
+            position: relative;
+            height: 8px;
+            background: linear-gradient(90deg, #0ea5e9, #4f46e5); /* sky-500 to indigo-600 */
+            border-radius: 4px;
+        }
+        .timeline-marker {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 9999px;
+            border: 2px solid #f8fafc;
+        }
+        .timeline-cut {
+            position: absolute;
+            top: -2rem;
+            bottom: -2rem;
+            width: 4px;
+            background: #ef4444; /* red-500 */
+            box-shadow: 0 0 15px #ef4444, 0 0 20px #ef4444;
+            transform: rotate(15deg);
+        }
+        .pathway-card {
+            background-color: #0f172a; /* Slate 900 */
+            border: 1px solid #334155; /* Slate 700 */
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .pathway-icon-container {
+            height: 80px;
+            width: 100%;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .segue-section, .infographic-section {
+            border-top: 1px dashed #475569;
+            padding-top: 4rem;
+             margin-top: 4rem;
+        }
+        .chart-bar-container {
+            position: relative;
+            width: 100%;
+            background-color: #334155;
+            border-radius: 9999px;
+            height: 1.25rem;
+        }
+        .chart-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 1.5s ease-in-out;
+        }
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details .accordion-content {
+            padding-left: 3.5rem; /* Align with summary text */
+            margin-top: 1rem;
+        }
+        details .accordion-arrow {
+            transition: transform 0.2s;
+        }
+        details[open] .accordion-arrow {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- PART 1: The Foundational Science -->
+        <header class="text-center mb-16">
+            <h1 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500 mb-4">The Science of Nightly Renewal</h1>
+        </header>
+        
+        <section>
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-sky-400">Your Body's Master Clock: The Day/Night Cycle</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="bg-slate-900 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></span>
+                        <h3 class="text-2xl font-bold">Day: Protection Mode</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center"><span class="icon-wrapper p-2 rounded-full mr-3"><svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></span> Stronger Skin Barrier¹</li>
+                        <li class="flex items-center"><span class="icon-wrapper p-2 rounded-full mr-3"><svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></span> Higher Sebum Production</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl">
+                     <div class="flex items-center mb-4">
+                        <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></span>
+                        <h3 class="text-2xl font-bold">Night: Repair Mode</h3>
+                    </div>
+                     <ul class="space-y-4">
+                        <li class="flex items-center"><span class="icon-wrapper p-2 rounded-full mr-3"><svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></span> <strong>2.7x more</strong> DNA Repair (XPA)*</li>
+                        <li class="flex items-center"><span class="icon-wrapper p-2 rounded-full mr-3"><svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M5.42 9.42A7.5 7.5 0 1012 4.5M12 7v5l3.5 2"></path></svg></span> <strong>2.4x more</strong> Cell Proliferation (Cyclin D1)*</li>
+                        <li class="flex items-center"><span class="icon-wrapper p-2 rounded-full mr-3"><svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></span> <strong>2.2x more</strong> Autophagy (LC3B)*</li>
+                        <li class="flex items-center"><span class="icon-wrapper p-2 rounded-full mr-3"><svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m12 0a2 2 0 100-4m0 4a2 2 0 110-4m-6-4a2 2 0 100-4m0 4a2 2 0 110-4"></path></svg></span> <strong>2.9x more</strong> Lipid Synthesis (ABCA12)*</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="infographic-section">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-red-500">The Cascade of Damage: How Sleep Loss Breaks the Cycle</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="bg-slate-900 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.354A1.76 1.76 0 016.583 12H5a2 2 0 01-2-2V7a2 2 0 012-2h1.583a1.76 1.76 0 011.649.882l2.147 6.354a1.76 1.76 0 003.417-.592V5.76a2 2 0 012-2h1.583a1.76 1.76 0 011.649.882l2.147 6.354a1.76 1.76 0 003.417-.592V7a2 2 0 00-2-2h-1.583a1.76 1.76 0 00-1.649.882l-2.147 6.354A1.76 1.76 0 0114.417 12H13a2 2 0 00-2 2v2.238Z"></path></svg></span>
+                        <h3 class="text-xl font-bold">Cellular Damage</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Inflammation (IL-1α)</span><span class="font-bold text-red-400">~2x Increase*</span></div>
+                            <div class="chart-bar-container"><div class="chart-bar bg-gradient-to-r from-red-500 to-orange-500" style="width: 0%;"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Cellular Aging (P21)</span><span class="font-bold text-orange-400">~2x Increase*</span></div>
+                            <div class="chart-bar-container"><div class="chart-bar bg-gradient-to-r from-orange-500 to-yellow-500" style="width: 0%;"></div></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-4 text-center">*Based on in-vitro BMAL1 clock gene knockdown studies.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                         <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></span>
+                        <h3 class="text-xl font-bold">Visible & Systemic Effects</h3>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><span class="icon-wrapper p-2 rounded-full mr-3 mt-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></span><span>Disturbed mental well-being</span></li>
+                        <details>
+                            <summary class="flex items-start cursor-pointer">
+                                <span class="icon-wrapper p-2 rounded-full mr-3 mt-1"><svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m-12.728 0a9 9 0 010-12.728m12.728 0L5.636 18.364"></path></svg></span>
+                                <span class="flex-grow">Disrupted sleep cycle is linked to wider health issues:</span>
+                                <svg class="w-5 h-5 text-slate-400 accordion-arrow mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </summary>
+                            <ul class="list-disc pl-12 pt-2 space-y-2 text-slate-300">
+                                <li>Accelerated skin aging & uneven pigmentation.*</li>
+                                <li>Increased instances of dry skin, hives & cracked skin.*</li>
+                                <li>Systemic inflammation contributing to conditions like periodontitis.²</li>
+                            </ul>
+                        </details>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PART 2: The Magnified Loss Infographic -->
+        <section class="segue-section">
+            <header class="text-center mb-16">
+                 <h2 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 mb-4">Losing just 1-2 hours of sleep magnifies losses in crucial body processes.</h1>
+                <p class="text-lg md:text-xl text-slate-300"><strong>It's not what you lose, but when you lose it. The final hours of sleep are when the most critical restorative functions occur.</strong></p>
+            </header>
+
+            <div class="relative py-16">
+                <!-- Timeline Visualization -->
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div class="text-center md:text-left">
+                        <div class="flex justify-center md:justify-start items-center gap-3 mb-2">
+                             <div class="icon-wrapper p-2 rounded-full" title="Memory Consolidation"><svg class="w-6 h-6 text-slate-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.8 9.925l.345-3.449A2 2 0 0110.124 4h3.752a2 2 0 011.979 2.476l.345 3.449M12 16.75a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"/></svg></div>
+                             <div class="icon-wrapper p-2 rounded-full" title="Initial Cell Cleanup"><svg class="w-6 h-6 text-slate-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4"/></svg></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-sky-400">Early Night (Hours 1-4): The Foundation</h3>
+                        <p class="text-sm text-slate-400 mt-1">The body enters deep sleep, beginning memory consolidation and initial cellular cleanup.</p>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <div class="flex justify-center md:justify-end items-center gap-3 mb-2">
+                            <div class="icon-wrapper p-2 rounded-full" title="Peak DNA Repair"><svg class="w-6 h-6 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z"/></svg></div>
+                            <div class="icon-wrapper p-2 rounded-full" title="Peak Cell Proliferation"><svg class="w-6 h-6 text-sky-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg></div>
+                            <div class="icon-wrapper p-2 rounded-full" title="Deep Autophagy"><svg class="w-6 h-6 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0011.667 0l3.181-3.183m-4.991-2.693V7.942m0 0H2.985m4.992 0l-3.181-3.184a8.25 8.25 0 0111.667 0l3.181 3.184m-4.991 2.693L19.015 7.942"/></svg></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-sky-400">Late Night (Hours 5-8): The "Golden Hours" of Repair</h3>
+                        <p class="text-sm text-slate-400 mt-1">The body's most intensive repair work happens here. DNA is proofread, new cells are built, and the brain is flushed of toxins.</p>
+                    </div>
+                </div>
+                <div class="timeline-bar">
+                    <div class="timeline-marker bg-sky-500" style="left: 0%;"></div>
+                    <div class="timeline-marker bg-blue-600" style="left: 50%;"></div>
+                    <div class="timeline-marker bg-indigo-700" style="left: 100%;"></div>
+                    <div class="timeline-cut" style="left: 75%;"></div>
+                </div>
+                <div class="grid grid-cols-2 gap-8 mt-8">
+                    <div class="text-center md:text-left">
+                         <h3 class="font-bold text-lg text-red-500">Early Night (Hours 1-4)</h3>
+                        <p class="text-sm text-slate-400 mt-1">The necessary foundational work is complete, but the most important repair is yet to come.</p>
+                    </div>
+                    <div class="text-center md:text-right relative">
+                        <div class="flex justify-center md:justify-end items-center gap-3 mb-2">
+                             <div class="icon-wrapper p-2 rounded-full" title="Missed Repair"><svg class="w-6 h-6 text-red-500 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z"/></svg></div>
+                            <div class="icon-wrapper p-2 rounded-full" title="Missed Proliferation"><svg class="w-6 h-6 text-red-500 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-red-500">Late Night (Hours 5-6): An Abrupt Halt</h3>
+                        <p class="text-sm text-slate-400 mt-1">For many, this is reality. The alarm rings, cutting off the "golden hours" and leaving the most valuable repair work unfinished.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-8">
+                 <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-orange-400">The Magnified Cost</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
+                    <div class="bg-slate-900 p-6 rounded-2xl text-center flex flex-col items-center gap-4">
+                         <svg class="w-16 h-16 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <p class="text-6xl font-black text-slate-300">25%</p>
+                            <p class="text-lg text-slate-400">Less Sleep Time</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-2xl text-center border-2 border-red-500 flex flex-col items-center gap-4">
+                         <svg class="w-16 h-16 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"></path></svg>
+                        <div>
+                            <p class="text-6xl font-black text-red-500">>50%</p>
+                            <p class="text-lg text-red-400">Less CRITICAL Repair</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+
+        <!-- PART 3: The Detailed Science Recovery Pathways -->
+        <section class="segue-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-400">Reclaiming the Lost Hours: Pathways to Recovery</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="pathway-card">
+                     <div class="pathway-icon-container">
+                        <svg class="h-full" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                            <defs><linearGradient id="balance-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#2dd4bf"/></linearGradient></defs>
+                            <g>
+                                <path d="M10 70 L 90 70" stroke="#475569" stroke-width="2"/>
+                                <path d="M50 70 L 50 20" stroke="#475569" stroke-width="2"/>
+                                <path d="M20 20 L 80 20" stroke="url(#balance-gradient)" stroke-width="4"/>
+                                <g transform="translate(35, 20) rotate(10)">
+                                    <circle cx="0" cy="0" r="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+                                    <path d="M -3 0 L 0 -4 L 3 0" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+                                </g>
+                                 <g transform="translate(65, 20) rotate(-10)">
+                                    <circle cx="0" cy="0" r="10" fill="#0f172a" stroke="#2dd4bf" stroke-width="2"/>
+                                    <circle cx="0" cy="-3" r="2" fill="#2dd4bf" opacity="0.8"/>
+                                    <circle cx="-3" cy="3" r="1.5" fill="#2dd4bf" opacity="0.8"/>
+                                    <circle cx="3" cy="3" r="1.5" fill="#2dd4bf" opacity="0.8"/>
+                                </g>
+                            </g>
+                        </svg>
+                     </div>
+                    <h3 class="font-bold text-xl mb-2 text-sky-400">Rebalance</h3>
+                    <p class="text-sm text-slate-400">Re-synchronize the body's foundational systems by resetting the internal circadian clock at the genetic level, while nurturing the skin's microbiome—an ecosystem now known to be vital for regulating mood via the skin-mind axis.</p>
+                </div>
+                <div class="pathway-card">
+                     <div class="pathway-icon-container">
+                         <svg class="h-full" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 10,40 L 90,40" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+                            <path d="M 10,40 L 40,40" stroke="#e0f2fe" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M 60,40 L 90,40" stroke="#e0f2fe" stroke-width="6" stroke-linecap="round"/>
+                            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#f87171" fill="none">
+                                <path d="M 45,30 L 50,40 L 55,30"/>
+                                <path d="M 45,50 L 50,40 L 55,50"/>
+                            </g>
+                         </svg>
+                     </div>
+                    <h3 class="font-bold text-xl mb-2 text-rose-400">Repair</h3>
+                    <p class="text-sm text-slate-400">Target the physical damage from an active life by reducing key inflammatory markers like IL-6 and TNFα. Using advanced 3D muscle organoids, actives like 12-HSA can be validated for their ability to aid muscle recovery.</p>
+                </div>
+                <div class="pathway-card">
+                     <div class="pathway-icon-container">
+                        <svg class="h-full" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 15 C 20 20, 20 70, 50 75 C 80 70, 80 20, 50 15" stroke="#34d399" stroke-width="2" fill="#0f172a"/>
+                            <path d="M40 5 L 30 15 M50 5 L 50 15 M60 5 L 70 15" stroke="#f8fafc" stroke-width="1.5" opacity="0.5"/>
+                            <path d="M40 85 L 30 75 M50 85 L 50 75 M60 85 L 70 75" stroke="#f8fafc" stroke-width="1.5" opacity="0.5"/>
+                            <circle cx="50" cy="45" r="12" stroke="#f8fafc" stroke-width="1.5" fill="none"/>
+                            <path d="M44 45 L 48 49 L 56 41" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                     </div>
+                    <h3 class="font-bold text-xl mb-2 text-emerald-400">Restore</h3>
+                    <p class="text-sm text-slate-400">Harness the skin's >2x nighttime repair potential. Technologies can strengthen the skin's barrier and counteract the gene-suppressing effects of daily stressors like pollutants and cortisol, restoring natural resilience.</p>
+                </div>
+                <div class="pathway-card">
+                     <div class="pathway-icon-container">
+                         <svg class="h-full" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M20 40 Q 30 20, 40 40 T 60 40 T 80 40" stroke="#a78bfa" stroke-width="2" fill="none" stroke-linecap="round"/>
+                             <circle cx="20" cy="40" r="3" fill="#a78bfa"/>
+                             <circle cx="80" cy="40" r="3" fill="#a78bfa"/>
+                         </svg>
+                     </div>
+                    <h3 class="font-bold text-xl mb-2 text-violet-400">Relax</h3>
+                    <p class="text-sm text-slate-400">Soothe the mind by modulating the nervous system. Advanced neuroactives can target GABAergic pathways to calm mental stress, while topical melatonin can deliver the body's own signal to prepare for sleep.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="infographic-section">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-indigo-400">Pathways to Nightly Recovery: A Deeper Look</h2>
+            <div class="space-y-4">
+                 <details class="bg-slate-800 p-6 rounded-lg" open>
+                    <summary class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18a6 6 0 100-12 6 6 0 000 12z"></path></svg></span>
+                            <h3 class="text-xl font-bold">Rebalance the Clock</h3>
+                        </div>
+                        <div class="accordion-arrow text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                    </summary>
+                    <div class="accordion-content grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-700 mt-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Counteract Blue Light Stress:</h4>
+                            <p class="text-slate-300">Blue light from screens disrupts the natural rhythm of crucial clock genes like BMAL1 and Cry1. Niacinamide (Vit B3) has been shown in-vitro to counteract this disruption, helping restore the genes' normal day/night expression cycle.*</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Fight Daily Stressors:</h4>
+                            <p class="text-slate-300">Pollutants and the stress hormone cortisol suppress key genes, weakening the skin's natural functions. Prolipid Technology, featuring 12-HSA, helps counteract this suppression, allowing the skin to maintain its resilience against daily environmental and physiological stress.*</p>
+                        </div>
+                    </div>
+                </details>
+                <details class="bg-slate-800 p-6 rounded-lg">
+                    <summary class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></span>
+                            <h3 class="text-xl font-bold">Calm the Mind</h3>
+                        </div>
+                        <div class="accordion-arrow text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                    </summary>
+                    <div class="accordion-content grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-700 mt-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Topical Melatonin Boost:</h4>
+                             <p class="text-slate-300">Applying a melatonin lotion increases the hormone's concentration in saliva within an hour, showing it has been absorbed by the body to signal sleep.*</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Advanced Neuroactive Support:</h4>
+                            <p class="text-slate-300">The scientific landscape is moving beyond common botanicals to leverage specific bioactives like Neurophroline® and develop proprietary neuro-calming technologies that can soothe mental stress and promote restful sleep.</p>
+                        </div>
+                    </div>
+                </details>
+                <details class="bg-slate-800 p-6 rounded-lg">
+                    <summary class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-2a6 6 0 00-12 0v2"></path></svg></span>
+                            <h3 class="text-xl font-bold">Soothe the Body</h3>
+                        </div>
+                        <div class="accordion-arrow text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                    </summary>
+                    <div class="accordion-content grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-700 mt-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Post-Workout Recovery:</h4>
+                            <p class="text-slate-300">Intense exercise causes muscle fatigue through oxidative stress and inflammation. Advanced models, like 3D muscle organoids, are used to demonstrate how actives (e.g., 12-HSA) in cleansing products can reduce these stress markers, helping soothe muscles for better sleep.*</p>
+                        </div>
+                         <div>
+                            <h4 class="font-bold mb-2">Non-Invasive Diagnostics:</h4>
+                            <p class="text-slate-300">A key area of research is non-invasive sweat analysis. It offers a way to detect biomarkers for both muscle fatigue and stress (like cortisol), creating opportunities for personalized recovery solutions.*</p>
+                        </div>
+                    </div>
+                </details>
+                <details class="bg-slate-800 p-6 rounded-lg">
+                    <summary class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <span class="icon-wrapper p-2 rounded-full mr-4"><svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 21a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v8a2 2 0 01-2 2H9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 14.5a3 3 0 11-3-3 3 3 0 013 3z"></path></svg></span>
+                            <h3 class="text-xl font-bold">Balance the Microbiome</h3>
+                        </div>
+                        <div class="accordion-arrow text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                    </summary>
+                    <div class="accordion-content grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-700 mt-4">
+                        <div>
+                            <h4 class="font-bold mb-2">The Skin-Mind Connection:</h4>
+                            <p class="text-slate-300">The skin is an organ of emotional expression. Research now shows a direct link between the health of the skin's microbiome and mental wellbeing, influenced by factors like local and systemic inflammation.*</p>
+                        </div>
+                         <div>
+                            <h4 class="font-bold mb-2">Targeted Microbiome Science:</h4>
+                            <p class="text-slate-300">Studies have found a direct correlation: higher levels of beneficial skin bacteria like *Cutibacterium* are linked to lower stress and a better mood. This opens a clear innovation path for products that nurture a healthy microbiome for improved wellbeing.*</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Final Sections -->
+        <section class="infographic-section">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-slate-400">Science Explainer</h2>
+             <p class="text-center text-slate-300 mb-6 max-w-2xl mx-auto">The research is based on specific scientific methods and biological markers. Here are brief explanations of the key terms:</p>
+             <div class="grid md:grid-cols-2 gap-6">
+                 <div class="bg-slate-800 p-6 rounded-lg text-slate-300">
+                    <h4 class="font-bold mb-2 text-sky-400">What is a "knockdown" study?</h4>
+                    <p>A research method where scientists reduce a specific gene's expression to understand its function. By observing what happens when the gene is less active, they can determine its role in biological processes.</p>
+                 </div>
+                 <div class="bg-slate-800 p-6 rounded-lg text-slate-300">
+                    <h4 class="font-bold mb-2 text-sky-400">What are these markers?</h4>
+                    <ul class="space-y-2">
+                        <li><strong>BMAL1:</strong> A core "clock gene" that acts as a master regulator of the circadian rhythm in cells.</li>
+                        <li><strong>IL-1α & IL-6/TNFα:</strong> Cytokine proteins that are key indicators of an inflammatory response.</li>
+                        <li><strong>P21:</strong> A protein that acts as a stop signal for cell division; a well-known marker for cellular aging.</li>
+                    </ul>
+                 </div>
+             </div>
+        </section>
+
+        <section>
+             <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-slate-400">Scientific References</h2>
+             <div class="bg-slate-800 p-6 rounded-lg text-slate-300 text-sm">
+                <ol class="list-decimal list-inside space-y-3">
+                    <li>Yosipovitch, G., et al. (1998). Time-dependent variations of the skin barrier function in humans... <em>Journal of Investigative Dermatology, 110</em>(1), 20–23.</li>
+                    <li>Xiong, W., et al. (2023). Shift work disrupts circadian rhythm, contributing to periodontitis... <em>International Journal of Oral Science, 15</em>(1), 40.</li>
+                </ol>
+                <p class="mt-4">* Data on file, Unilever R&D. Presented in "BBM Sleep S&T Contributions" and "Microbiome-based Wellbeing" internal documents.</p>
+             </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const charts = entry.target.querySelectorAll('.chart-bar');
+                        charts.forEach(chart => { chart.style.width = '100%'; });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            document.querySelectorAll('.infographic-section, .segue-section, .mt-16.text-center').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
