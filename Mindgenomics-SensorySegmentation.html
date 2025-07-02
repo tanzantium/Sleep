@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Science of Discovery</title>
+    <title>Mindgenomics - Fragrance Preference</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
             animation: fadeInUp 0.8s ease-out forwards;
         }
         .nav-link {
-            @apply px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-100 transition-all duration-200 shadow-sm border border-gray-200;
+            @apply px-4 py-2 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-100 transition-all duration-200 shadow-sm border border-gray-200 hover:shadow-md hover:scale-105;
         }
         .nav-link.active {
-            @apply bg-indigo-600 text-white shadow-md border-indigo-700;
+            @apply bg-indigo-600 text-white shadow-lg border-indigo-700 scale-105;
         }
     </style>
 </head>
@@ -45,9 +45,10 @@
                 <span class="text-2xl font-bold text-gray-900">Mindgenomics</span>
             </div>
             <div id="navigation" class="flex items-center space-x-2">
-                 <button data-page="page-foundations" class="nav-link active">Foundations of Perception</button>
-                 <button data-page="page-senses" class="nav-link">Mapping the Senses</button>
-                 <button data-page="page-mind" class="nav-link">Mapping the Mind</button>
+                 <button data-page="page-foundations" class="nav-link active">Foundations</button>
+                 <button data-page="page-design" class="nav-link">The Design</button>
+                 <button data-page="page-senses" class="nav-link">Mapping Senses</button>
+                 <button data-page="page-mind" class="nav-link">Mapping Minds</button>
             </div>
         </nav>
     </header>
@@ -150,6 +151,114 @@
             </section>
         </main>
     </div>
+    
+    <div id="page-design" class="page-content hidden">
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white text-center px-4 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 opacity-90 z-10"></div>
+            <div class="absolute inset-0 z-0">
+               <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="object-cover w-full h-full">
+                <defs>
+                  <pattern id="pattern-circles-4" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+                    <circle cx="20" cy="20" r="1" class="fill-white/10"></circle>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#pattern-circles-4)"></rect>
+              </svg>
+            </div>
+            <div class="relative z-20 max-w-4xl animate-fade-in-up">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 leading-tight">
+                    The Experimental Design
+                </h1>
+                <p class="text-lg md:text-2xl max-w-2xl mx-auto text-gray-300">
+                    The scientific framework that separates Mindgenomics from all other approaches.
+                </p>
+            </div>
+        </section>
+
+        <main class="container mx-auto px-6 py-16 md:py-24 space-y-24 md:space-y-32">
+            <section class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Scarlet Thread of Our Science</h2>
+                <p class="text-lg text-gray-600">
+                    Many researchers test products. Very few run experiments. This distinction is the single most important differentiator of our work. Standard methods test a few finished products to find a winner. We systematically explore a wide space of possibilities to discover the <span class="font-semibold text-indigo-600">rules</span> that govern what people love.
+                </p>
+            </section>
+
+            <section>
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works: The Power of Combinations</h2>
+                    <p class="text-lg text-gray-600">
+                        Instead of testing whole products, we deconstruct them into their core building blocks (elements). We then create hundreds of unique combinations of these elements (vignettes) and present them to consumers in a rapid, engaging exercise.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <h3 class="text-xl font-bold mb-4">1. Define Elements</h3>
+                            <p class="text-gray-600 mb-4">These are the building blocks of your product or concept.</p>
+                            <div class="space-y-2">
+                                <div class="bg-blue-100 text-blue-800 p-3 rounded-lg">A. A tangy blend of fruit...</div>
+                                <div class="bg-green-100 text-green-800 p-3 rounded-lg">B. Leaves skin softer...</div>
+                                <div class="bg-yellow-100 text-yellow-800 p-3 rounded-lg">C. Feel confident...</div>
+                                <div class="bg-red-100 text-red-800 p-3 rounded-lg">D. From Chanel...</div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="text-xl font-bold mb-4">2. Create & Test Vignettes</h3>
+                            <p class="text-gray-600 mb-4">Each respondent sees a unique, systematic set of combinations and rates them. No two people see the same set.</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="border p-4 rounded-lg">
+                                    <h4 class="font-semibold mb-2">Vignette 1</h4>
+                                    <div class="bg-blue-100 text-blue-800 p-2 rounded-md text-sm">A. A tangy blend of fruit...</div>
+                                    <div class="bg-yellow-100 text-yellow-800 p-2 mt-2 rounded-md text-sm">C. Feel confident...</div>
+                                    <div class="mt-3 text-center">Rating: <span class="font-bold">7/9</span></div>
+                                </div>
+                                <div class="border p-4 rounded-lg">
+                                    <h4 class="font-semibold mb-2">Vignette 2</h4>
+                                    <div class="bg-green-100 text-green-800 p-2 rounded-md text-sm">B. Leaves skin softer...</div>
+                                    <div class="bg-red-100 text-red-800 p-2 mt-2 rounded-md text-sm">D. From Chanel...</div>
+                                    <div class="mt-3 text-center">Rating: <span class="font-bold">8/9</span></div>
+                                </div>
+                                <div class="border p-4 rounded-lg">
+                                    <h4 class="font-semibold mb-2">Vignette 3</h4>
+                                    <div class="bg-blue-100 text-blue-800 p-2 rounded-md text-sm">A. A tangy blend of fruit...</div>
+                                    <div class="bg-green-100 text-green-800 p-2 mt-2 rounded-md text-sm">B. Leaves skin softer...</div>
+                                    <div class="bg-red-100 text-red-800 p-2 mt-2 rounded-md text-sm">D. From Chanel...</div>
+                                    <div class="mt-3 text-center">Rating: <span class="font-bold">5/9</span></div>
+                                </div>
+                                <div class="border p-4 rounded-lg">
+                                    <h4 class="font-semibold mb-2">Vignette 4</h4>
+                                    <div class="bg-yellow-100 text-yellow-800 p-2 rounded-md text-sm">C. Feel confident...</div>
+                                    <div class="mt-3 text-center">Rating: <span class="font-bold">3/9</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t">
+                         <h3 class="text-xl font-bold mb-4 text-center">3. Deconstruct to Find the 'Why'</h3>
+                         <p class="text-center text-gray-600 mb-4">Because each person rates many unique combinations, we can use regression analysis to calculate the persuasive value, or "utility," of each individual element for that person.</p>
+                         <div class="bg-gray-100 p-4 rounded-lg text-center font-mono text-gray-700">
+                            Liking = Base Interest + (Value of A) + (Value of B) + (Value of C) ...
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Robust Data for Every Single Person</h2>
+                    <p class="text-lg text-gray-600">
+                        The experimental design allows us to build a complete mathematical model for each individual respondent. We are not averaging data; we are creating a database of individual minds. This "N of 1" analysis is what allows us to then cluster people based on their deep-seated preferences, revealing the mindsets that truly exist in the population.
+                    </p>
+                </div>
+                 <div class="text-center">
+                    <p class="text-lg text-gray-600 mt-16 max-w-3xl mx-auto">
+                        Now that we understand the power of this method, we can apply it to the world of physical scents.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <div id="page-senses" class="page-content hidden">
         <!-- Hero Section -->
@@ -182,43 +291,6 @@
                 <p class="text-lg text-gray-600">
                     Knowing how individual ingredients behave is the foundation. The next step is to understand how people perceive complete fragrances. The challenge is that fragrance preference is deeply personal, yet R&D and marketing decisions are often based on averages. This leads to missed opportunities and launches that don't deeply resonate.
                 </p>
-            </section>
-
-            <section>
-                <div class="text-center max-w-3xl mx-auto mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Standard Testing Falls Short</h2>
-                    <p class="text-lg text-gray-600">
-                        Many think they understand preference because they test products. However, simply rating existing fragrances against each other is not a true experiment and is not enough to uncover the deep-seated rules of liking.
-                    </p>
-                </div>
-                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
-                        <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-500 mr-4"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-                            <h3 class="text-2xl font-bold">The Standard Approach</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Testing a few existing products (yours and competitors') and asking for liking scores.</p>
-                        <ul class="space-y-3 text-gray-500">
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400 mr-2 mt-1 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg><span>Generates an "average" winner that may not truly excite anyone.</span></li>
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400 mr-2 mt-1 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg><span>Doesn't explain *why* something is liked; the sensory drivers remain a mystery.</span></li>
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400 mr-2 mt-1 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg><span>Can't predict how a new, different fragrance might perform.</span></li>
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400 mr-2 mt-1 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg><span>Hides niche segments with strong preferences for notes outside the current market.</span></li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl shadow-2xl border-2 border-indigo-500">
-                        <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-600 mr-4"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                            <h3 class="text-2xl font-bold">The Mindgenomics Approach</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Systematically creating and testing a wide range of fragrance prototypes where key accords are intentionally varied.</p>
-                        <ul class="space-y-3 text-gray-500">
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-2 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Maps the entire preference landscape for each individual.</span></li>
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-2 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Builds a mathematical model for each person: Liking = f(Sensory Notes).</span></li>
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-2 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Identifies distinct segments of people who share the same sensory "rules".</span></li>
-                            <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-2 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Provides a predictive roadmap for creating new, highly-liked fragrances.</span></li>
-                        </ul>
-                    </div>
-                </div>
             </section>
 
             <!-- Case Study Section -->
@@ -646,4 +718,3 @@
 
 </body>
 </html>
-
